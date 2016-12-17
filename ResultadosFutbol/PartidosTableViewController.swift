@@ -125,6 +125,21 @@ class PartidosTableViewController: UITableViewController {
         
     }
     
+    //Preparamos el segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "detallePartidoDesdePartidos") {
+            
+            if let vc = segue.destination as? DetallePartidoViewController {
+                let indexPath = tableView.indexPathForSelectedRow
+                vc.id = (partidos[(indexPath?.row)!]["id"] as? String)!
+                print(vc.id)
+            }
+        }
+        else {
+            return
+        }
+    }
+    
     
 }
 

@@ -119,5 +119,21 @@ class LiveScoreTableViewController: UITableViewController {
         
     }
     
+    //Preparamos el segue
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if (segue.identifier == "detallePartidoDesdeLiveScore") {
+            
+            if let vc = segue.destination as? DetallePartidoViewController {
+                let indexPath = tableView.indexPathForSelectedRow
+                vc.id = (liveScore[(indexPath?.row)!]["id"] as? String)!
+            }
+        }
+        else {
+            return
+        }
+    }
     
+    @IBAction func volverLiveScore(_segue: UIStoryboardSegue){
+        
+    }
 }
