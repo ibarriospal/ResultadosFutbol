@@ -12,6 +12,12 @@
 		66CE80C61E044E32003D0344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CE80C41E044E32003D0344 /* Main.storyboard */; };
 		66CE80C81E044E32003D0344 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66CE80C71E044E32003D0344 /* Assets.xcassets */; };
 		66CE80CB1E044E32003D0344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CE80C91E044E32003D0344 /* LaunchScreen.storyboard */; };
+		66CE80D31E0450CA003D0344 /* LigasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE80D21E0450CA003D0344 /* LigasTableViewController.swift */; };
+		66CE80D51E045600003D0344 /* CeldaLigaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE80D41E045600003D0344 /* CeldaLigaTableViewCell.swift */; };
+		66FF0AEF1E046AA5009A8AF5 /* PartidosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF0AEE1E046AA5009A8AF5 /* PartidosTableViewController.swift */; };
+		66FF0AF11E046C95009A8AF5 /* PartidosTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF0AF01E046C95009A8AF5 /* PartidosTableViewCell.swift */; };
+		66FF0AF31E053879009A8AF5 /* LiveScoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF0AF21E053879009A8AF5 /* LiveScoreTableViewCell.swift */; };
+		66FF0AF51E05388E009A8AF5 /* LiveScoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66FF0AF41E05388E009A8AF5 /* LiveScoreTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		66CE80C71E044E32003D0344 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		66CE80CA1E044E32003D0344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		66CE80CC1E044E32003D0344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		66CE80D21E0450CA003D0344 /* LigasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LigasTableViewController.swift; sourceTree = "<group>"; };
+		66CE80D41E045600003D0344 /* CeldaLigaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CeldaLigaTableViewCell.swift; sourceTree = "<group>"; };
+		66FF0AEE1E046AA5009A8AF5 /* PartidosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartidosTableViewController.swift; sourceTree = "<group>"; };
+		66FF0AF01E046C95009A8AF5 /* PartidosTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartidosTableViewCell.swift; sourceTree = "<group>"; };
+		66FF0AF21E053879009A8AF5 /* LiveScoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveScoreTableViewCell.swift; sourceTree = "<group>"; };
+		66FF0AF41E05388E009A8AF5 /* LiveScoreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveScoreTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +69,13 @@
 				66CE80C01E044E32003D0344 /* AppDelegate.swift */,
 				66CE80C21E044E32003D0344 /* ViewController.swift */,
 				66CE80C41E044E32003D0344 /* Main.storyboard */,
+				66FF0AF01E046C95009A8AF5 /* PartidosTableViewCell.swift */,
+				66CE80D21E0450CA003D0344 /* LigasTableViewController.swift */,
+				66CE80D41E045600003D0344 /* CeldaLigaTableViewCell.swift */,
 				66CE80C71E044E32003D0344 /* Assets.xcassets */,
+				66FF0AEE1E046AA5009A8AF5 /* PartidosTableViewController.swift */,
+				66FF0AF21E053879009A8AF5 /* LiveScoreTableViewCell.swift */,
+				66FF0AF41E05388E009A8AF5 /* LiveScoreTableViewController.swift */,
 				66CE80C91E044E32003D0344 /* LaunchScreen.storyboard */,
 				66CE80CC1E044E32003D0344 /* Info.plist */,
 			);
@@ -136,8 +154,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66FF0AF51E05388E009A8AF5 /* LiveScoreTableViewController.swift in Sources */,
+				66CE80D51E045600003D0344 /* CeldaLigaTableViewCell.swift in Sources */,
+				66FF0AF11E046C95009A8AF5 /* PartidosTableViewCell.swift in Sources */,
+				66FF0AEF1E046AA5009A8AF5 /* PartidosTableViewController.swift in Sources */,
 				66CE80C31E044E32003D0344 /* ViewController.swift in Sources */,
+				66CE80D31E0450CA003D0344 /* LigasTableViewController.swift in Sources */,
 				66CE80C11E044E32003D0344 /* AppDelegate.swift in Sources */,
+				66FF0AF31E053879009A8AF5 /* LiveScoreTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +323,7 @@
 				66CE80D11E044E32003D0344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
