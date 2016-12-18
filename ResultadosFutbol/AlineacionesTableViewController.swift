@@ -19,6 +19,7 @@ class AlineacionesTableViewController: UITableViewController {
     var alineacionVisitante = [[String:AnyObject]]()
     var datos = [String:AnyObject]()
     
+    
     @IBOutlet weak var equipoLocal: UILabel!
     
     
@@ -38,6 +39,7 @@ class AlineacionesTableViewController: UITableViewController {
                         //array
                         let myJSON =  try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String:AnyObject]
                         print(myJSON!)
+                        self.datos = myJSON!
                         
                         if let alineacionLocal2 = myJSON?["squad"]?["local"] {
                             DispatchQueue.main.async {
@@ -88,7 +90,11 @@ class AlineacionesTableViewController: UITableViewController {
         
         let nombreJugadorVisitante = alineacionVisitante[indexPath.row]["nick"] as? String
         alineacionTable.jugadorVisitante?.text = nombreJugadorVisitante
- 
+        
+        let nombreEquipoLocal = datos["local"] as? String
+        let nombreEquipoVisitante = datos["visitor"] as? String
+        self.equipoLocal?.text = nombreEquipoLocal! + "   -   " + nombreEquipoVisitante!
+        
         return alineacionTable
     }
     

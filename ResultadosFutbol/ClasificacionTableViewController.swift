@@ -16,7 +16,7 @@ class ClasificacionTableViewController: UITableViewController {
     
     var url: URL!
     var clasificacion = [[String:AnyObject]]()
-    
+    var datos = [String:AnyObject]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -39,6 +39,7 @@ class ClasificacionTableViewController: UITableViewController {
                         //array
                         let myJSON =  try JSONSerialization.jsonObject(with: content, options: JSONSerialization.ReadingOptions.mutableContainers) as? [String:AnyObject]
                         print(myJSON!)
+                        self.datos = myJSON!
                         
                         if let calsificacion2 = myJSON?["table"] {
                             DispatchQueue.main.async {
