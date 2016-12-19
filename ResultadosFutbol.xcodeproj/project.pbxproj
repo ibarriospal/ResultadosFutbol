@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		668181451E08647A00B09FB6 /* FechaPartidosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 668181441E08647A00B09FB6 /* FechaPartidosViewController.swift */; };
 		66CE80C11E044E32003D0344 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE80C01E044E32003D0344 /* AppDelegate.swift */; };
 		66CE80C31E044E32003D0344 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66CE80C21E044E32003D0344 /* ViewController.swift */; };
 		66CE80C61E044E32003D0344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66CE80C41E044E32003D0344 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		668181441E08647A00B09FB6 /* FechaPartidosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FechaPartidosViewController.swift; sourceTree = "<group>"; };
 		66CE80BD1E044E32003D0344 /* ResultadosFutbol.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResultadosFutbol.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66CE80C01E044E32003D0344 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		66CE80C21E044E32003D0344 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 				66CE80C01E044E32003D0344 /* AppDelegate.swift */,
 				66CE80C21E044E32003D0344 /* ViewController.swift */,
 				66CE80C41E044E32003D0344 /* Main.storyboard */,
+				668181441E08647A00B09FB6 /* FechaPartidosViewController.swift */,
 				66FF0B041E05C2FC009A8AF5 /* AlineacionTableViewCell.swift */,
 				66FF0B021E05BD28009A8AF5 /* AlineacionesTableViewController.swift */,
 				66FF0AFA1E059EC7009A8AF5 /* ClasificacionTableViewController.swift */,
@@ -179,6 +182,7 @@
 				66FF0B051E05C2FC009A8AF5 /* AlineacionTableViewCell.swift in Sources */,
 				66CE80C31E044E32003D0344 /* ViewController.swift in Sources */,
 				66CE80D31E0450CA003D0344 /* LigasTableViewController.swift in Sources */,
+				668181451E08647A00B09FB6 /* FechaPartidosViewController.swift in Sources */,
 				66CE80C11E044E32003D0344 /* AppDelegate.swift in Sources */,
 				66FF0AF31E053879009A8AF5 /* LiveScoreTableViewCell.swift in Sources */,
 				66FF0AFD1E05A16F009A8AF5 /* ClasificacionTableViewCell.swift in Sources */,

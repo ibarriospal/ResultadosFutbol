@@ -87,6 +87,7 @@ class LigasTableViewController: UITableViewController {
             } else {
                 print("Error descargando")
             }
+        
             // Ocultar indicador de actividad de red
             DispatchQueue.main.async {
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false

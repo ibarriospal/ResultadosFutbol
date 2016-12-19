@@ -11,6 +11,10 @@ import UIKit
 class PartidosTableViewController: UITableViewController {
     
     var partidos = [[String:AnyObject]]()
+    var fecha = String()
+    let url_sin_date = "http://apiclient.resultados-futbol.com/scripts/api/api.php?key=9dfb8c3eb814f2a275da5830745820b8&tz=Europe/Madrid&format=json&req=matchsday&date="
+    var url_con_date = String()
+    var url: URL!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,8 +25,8 @@ class PartidosTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        let url = URL(string: "http://apiclient.resultados-futbol.com/scripts/api/api.php?key=9dfb8c3eb814f2a275da5830745820b8&tz=Europe/Madrid&format=json&req=matchsday")
-        
+        url_con_date = "\(url_sin_date)\(fecha)"
+        url = URL(string: url_con_date)
         let task = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             if error != nil {
                 print ("error")
@@ -127,7 +131,7 @@ class PartidosTableViewController: UITableViewController {
     
     //Preparamos el segue
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if (segue.identifier == "detallePartidoDesdePartidos") {
+        if (segue.identifier == "detallePartidoDesdePartido") {
             
             if let vc = segue.destination as? DetallePartidoViewController {
                 let indexPath = tableView.indexPathForSelectedRow
@@ -139,7 +143,9 @@ class PartidosTableViewController: UITableViewController {
             return
         }
     }
-    
+    @IBAction func volverPartidos(_segue: UIStoryboardSegue){
+        
+    }
     
 }
 
